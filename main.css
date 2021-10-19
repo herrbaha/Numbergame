@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Press Start 2P', cursive;
+}
+section{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    background:cornflowerblue;
+    overflow: hidden;
+    display:flex;
+}
+.square{
+    display: flex;
+    white-space: normal;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 5rem;
+    width: 5rem;
+    margin: 5rem;
+    /* margin-left: 5rem; */
+    border: 5px solid rgb(209,125,125);
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    
+}
