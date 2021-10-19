@@ -13,7 +13,7 @@ section{
     margin: auto;
     background:cornflowerblue;
     overflow: hidden;
-    display:flex;
+    /* display:flex; */
 }
 .square{
     display: flex;
