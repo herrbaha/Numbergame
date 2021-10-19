@@ -25,7 +25,7 @@ const game = () => {
             item.style.color="transparent";
             item.style.pointerEvents="all";
         })
-    }, 1000);
+    }, 4000);
 
     document.querySelectorAll("div").forEach((item) => {
         item.addEventListener("click", (e) => { 
