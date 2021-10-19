@@ -10,10 +10,10 @@ const game = () => {
     for (let i=0; i< level+1; i++) {
         let squares = document.createElement("div");
         squares.classList.add("square");
-        let x = Math.floor(Math.random()*100);
-        let y = Math.floor(Math.random()*50);
-        squares.style.top = y + "px";
-        squares.style.left = x + "px";
+        let x = Math.floor(Math.random()*50);
+        let y = Math.floor(Math.random()*70);
+        squares.style.top = y + "%";
+        squares.style.left = x + "%";
         squares.textContent= i + 1;
         section.appendChild(squares);
     }
@@ -22,7 +22,7 @@ const game = () => {
     });
     setTimeout(() => {
         document.querySelectorAll("div").forEach(item => {
-            // item.style.color="transparent";
+            item.style.color="transparent";
             item.style.pointerEvents="all";
         })
     }, 1000);
