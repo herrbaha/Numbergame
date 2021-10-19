@@ -21,8 +21,8 @@ section{
     justify-content: center;
     align-items: center;
     position: absolute;
-    height: 5rem;
-    width: 5rem;
+    height: 3rem;
+    width: 3rem;
     margin: 5rem;
     /* margin-left: 5rem; */
     border: 5px solid rgb(209,125,125);

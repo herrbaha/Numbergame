@@ -10,8 +10,8 @@ const game = () => {
     for (let i=0; i< level+1; i++) {
         let squares = document.createElement("div");
         squares.classList.add("square");
-        let x = Math.floor(Math.random()*1000);
-        let y = Math.floor(Math.random()*500);
+        let x = Math.floor(Math.random()*100);
+        let y = Math.floor(Math.random()*50);
         squares.style.top = y + "px";
         squares.style.left = x + "px";
         squares.textContent= i + 1;
