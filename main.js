@@ -19,7 +19,7 @@ const game = () => {
     const height = window.innerHeight|| document.documentElement.clientHeight|| document.body.clientHeight;
     let yRandom = (height * 80 / 100) - 40;
 
-    writeHederinfo(level +"."+ "level basliyor");
+    writeHederinfo(level +"."+ "level starting");
     for (let i=0; i< level+1; i++) {
         let squares = document.createElement("div");
         squares.classList.add("square");
