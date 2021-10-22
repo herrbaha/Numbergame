@@ -9,6 +9,9 @@ let headerTextDiv = document.createElement("p");
 header.appendChild(headerTextDiv);
 
 const game = () => {
+    let xList = [];
+    let yList = [];
+
     section.innerHTML = "";
     for (let i=0; i< level+1; i++) {
         let squares = document.createElement("div");
