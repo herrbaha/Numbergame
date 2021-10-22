@@ -97,4 +97,11 @@ const game = () => {
     });
   });
 }
+const checkFark = (x,y, xList, yList ) => {
+    let lengList = xList.length;
+    for(let i=0; i<lengList; i++){
+        if((Math.abs(xList[i] - x) < 40 ) && (Math.abs(yList[i] - y) < 40)) return true;
+    }
+    return false;
+}
 game();
