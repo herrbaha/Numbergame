@@ -12,6 +12,7 @@ const game = () => {
         squares.classList.add("square");
         let x = Math.floor(Math.random()*50);
         let y = Math.floor(Math.random()*70);
+        console.log(x,y)
         squares.style.top = y + "%";
         squares.style.left = x + "%";
         squares.textContent= i + 1;
