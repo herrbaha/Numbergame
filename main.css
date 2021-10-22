@@ -32,13 +32,10 @@ section{
     justify-content: center;
     align-items: center;
     position: absolute;
-    height: 3rem;
-    width: 3rem;
-    margin: 5rem;
-    /* margin-left: 5rem; */
+    height: 30px; 
+    width: 30px;
     border: 5px solid rgb(209,125,125);
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: white;
     cursor: pointer;
-    
 }
