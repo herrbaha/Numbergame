@@ -5,6 +5,8 @@ let wrong = new Audio("./sound/soundsilk-buzzer-wrong-answer.mp3");
 
 const header = document.querySelector("header");
 const section = document.querySelector("section");
+let headerTextDiv = document.createElement("p");
+header.appendChild(headerTextDiv);
 
 const game = () => {
     section.innerHTML = "";
