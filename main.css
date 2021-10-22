@@ -6,6 +6,13 @@
 body{
     font-family: 'Press Start 2P', cursive;
 }
+header p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+}
 section{
     position: relative;
     width: 100vw;
