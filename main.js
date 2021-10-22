@@ -104,4 +104,7 @@ const checkFark = (x,y, xList, yList ) => {
     }
     return false;
 }
+const writeHederinfo = (gameMessage) => {
+    headerTextDiv.innerHTML = gameMessage ;
+}
 game();
