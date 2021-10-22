@@ -24,21 +24,21 @@ const game = () => {
         let squares = document.createElement("div");
         squares.classList.add("square");
 
-        // bu kisim karelerin kesismesi halinde yeniden x, y degeri atamak icin yazilmistir
+        // To reassign x and y values in case the boxes intersect
         let whileCondition = true;
         while (whileCondition) {
             whileCondition = false;
             let x = Math.floor(Math.random()* xRandom);
             let y = Math.floor(Math.random()* yRandom);
-            if(checkFark(x,y, xList, yList)){
+            if(checkDifference(x,y, xList, yList)){
                 whileCondition = true;
-                console.log("ayni geldi")
+                console.log("it came across")
             } else {
                 xList.push(x);
                 yList.push(y);
                 squares.style.top = y + "px";
                 squares.style.left = x + "px";
-                // height ve weight css de 30px e ayarlandi
+                // height ve weight set in css to 30px.
                 squares.textContent= i + 1;
                 section.appendChild(squares);
                 whileCondition = false;
@@ -97,7 +97,7 @@ const game = () => {
     });
   });
 }
-const checkFark = (x,y, xList, yList ) => {
+const checkDifference = (x,y, xList, yList ) => {
     let lengList = xList.length;
     for(let i=0; i<lengList; i++){
         if((Math.abs(xList[i] - x) < 40 ) && (Math.abs(yList[i] - y) < 40)) return true;
