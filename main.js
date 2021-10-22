@@ -3,6 +3,7 @@ let index= 1;
 let correct = new Audio("./sound/soundsilk-Correct-Answer-Soundeffect.mp3");
 let wrong = new Audio("./sound/soundsilk-buzzer-wrong-answer.mp3");
 
+const header = document.querySelector("header");
 const section = document.querySelector("section");
 
 const game = () => {
