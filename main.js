@@ -14,7 +14,6 @@ const game = () => {
 
     section.innerHTML = "";
     const width  = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-    // 30 width + border 5px sag ve sol = 40
     let xRandom = (width * 80 / 100) - 40;
     const height = window.innerHeight|| document.documentElement.clientHeight|| document.body.clientHeight;
     let yRandom = (height * 80 / 100) - 40;
@@ -38,7 +37,6 @@ const game = () => {
                 yList.push(y);
                 squares.style.top = y + "px";
                 squares.style.left = x + "px";
-                // height ve weight set in css to 30px.
                 squares.textContent= i + 1;
                 section.appendChild(squares);
                 whileCondition = false;
